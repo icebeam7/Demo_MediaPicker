@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="Demo_MediaPicker.AppShell"
+       xmlns:paginas="clr-namespace:Demo_MediaPicker.Paginas">
+    <FlyoutItem Title="Demo MediaPicker" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Imagen">
+            <paginas:PaginaImagen/>
+        </ShellContent>
+
+        <ShellContent Title="Video">
+            <paginas:PaginaVideo/>
+        </ShellContent>
+    </FlyoutItem>
+</Shell>
