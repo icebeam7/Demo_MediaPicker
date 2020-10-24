@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo_MediaPicker.Paginas.PaginaImagen"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="5"
+                         Margin="10">
+                <Button x:Name="btnSeleccionar" Text="Seleccionar Imagen"
+                        Clicked="btnSeleccionar_Clicked"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"/>
+
+                <Button x:Name="btnUsarCamara" Text="Usar cámara"
+                        Clicked="btnUsarCamara_Clicked"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"/>
+
+                <Image x:Name="imgFoto"
+                       WidthRequest="200"
+                       HeightRequest="200"
+                       Aspect="AspectFit"/>
+
+                <Label x:Name="lblTipo"
+                       TextColor="Green"/>
+
+                <Label x:Name="lblRutaOriginal"
+                       FontSize="Small"
+                       TextColor="Blue"/>
+
+                <Label x:Name="lblRutaCopia"
+                       FontSize="Small"
+                       TextColor="Magenta"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
